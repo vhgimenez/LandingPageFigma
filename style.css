@@ -1,0 +1,606 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Fraunces";
+    background-color: #FDF8F2;
+}
+
+header {
+    padding: 4rem 9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 27.6rem;
+    height: 2.9rem;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    gap: 3.5rem;
+    list-style: none;
+    align-items: center;
+    font-family: "Comic Neue";
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+.MenuFooter ul li a {
+    color: white;
+}
+
+.MenuFooter ul li a:hover {
+    color: rgb(214, 214, 214);
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: rgb(48, 48, 48);
+    cursor: pointer;
+}
+
+.menu-botoes {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 3.5rem;
+}
+
+header button {
+    border-radius: 20rem;
+    padding: 1rem 1.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#Consult {
+    background-color: black;
+    color: white;
+}
+
+main {
+    width: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ConteudoPrincipal {
+    margin-top: 9rem;
+    text-align: center;
+    align-items: center;
+}
+
+.ConteudoPrincipal button,
+.InformacaoImagem button {
+    background-color: rgb(224, 224, 224);
+    color: #344054;
+    border: none;
+    padding: .4rem 1.2rem .4rem 1.2rem;
+    border-radius: 1.6rem;
+    font-family: "Comic Neue";
+    font-size: 1.0rem;
+    cursor: pointer;
+}
+
+h1 {
+    width: 80rem;
+    margin-top: 1.6rem;
+    margin-bottom: 2.4rem;
+    font-size: 5rem;
+    font-weight: 300;
+    font-family: "Fraunces";
+}
+
+h4 {
+    margin: 0 auto;
+    width: 58rem;
+    color: #667085;
+    font-size: 1.6rem;
+    font-family: "Comic Neue";
+    font-weight: 300;
+    line-height: 2rem;
+}
+
+.conteudo-botoes {
+    margin-top: 3.8rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.conteudo-botoes button {
+    border-radius: 20rem;
+    padding: 1.6rem 2.8rem 1.6rem 2.8rem;
+    border: .1rem solid;
+}
+
+#Learn {
+    background-color: white;
+}
+
+#Register {
+    background-color: black;
+    color: white;
+}
+
+.ConteudoMosaico {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+
+.ConteudoMosaico img {
+    width: 100rem;
+    height: 23rem;
+}
+
+.DuasCaixasTexto {
+    display: flex;
+    justify-content: center;
+    gap: 5.6rem;
+    margin-bottom: 10rem;
+}
+
+.PrimeiroBloco {
+    margin-top: 9.6rem;
+}
+
+.SegundoBloco {
+    margin-top: 23.2rem;
+}
+
+.PrimeiroBloco,
+.SegundoBloco {
+    width: 50rem;
+}
+
+.PrimeiroBloco hr {
+    border-color: #DE5217;
+}
+
+.SegundoBloco hr {
+    border-color: #007CC2;
+}
+
+.PrimeiroBloco img {
+    margin-top: 2.9rem;
+    transition: transform .3s;
+}
+
+.PrimeiroBloco img:hover,
+.SegundoBloco img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.SegundoBloco img {
+    margin-top: 3.2rem;
+    transition: transform .3s;
+}
+
+.PrimeiroBloco h2,
+.SegundoBloco h2 {
+    margin-top: 3.2rem;
+    font-family: "Fraunces";
+    font-weight: 300;
+    font-size: 4.5rem;
+}
+
+.CaixaAmarela {
+    background-color: #FED501;
+    text-align: center;
+    padding-top: 9rem;
+}
+
+.CaixaAmarela h2 {
+    font-weight: 300;
+    font-size: 4.5rem;
+}
+
+.CaixaAmarela p {
+    margin: 1.5rem auto 0;
+    width: 68rem;
+    font-family: "Comic Neue";
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.CaixaAmarela button,
+#ReadAbout {
+    margin-top: 4rem;
+    margin-bottom: 9rem;
+    border-radius: 20rem;
+    padding: 1.6rem 2.8rem 1.6rem 2.8rem;
+    border: 0rem solid;
+    font-family: "Comic Neue";
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.InformacaoImagem {
+    width: 100%;
+    display: flex;
+}
+
+.informacoes {
+    margin: auto auto;
+    text-align: center;
+}
+
+.informacoes h2 {
+    margin-top: 1rem;
+    font-size: 4.5rem;
+    font-weight: 300;
+}
+
+.informacoes p {
+    margin-top: 1.5rem;
+    margin-bottom: 2.8rem;
+    width: 32rem;
+    font-family: "Comic Neue";
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+#ReadAbout {
+    margin-top: 0;
+}
+
+.ImagemMulher {
+    width: 50%;
+}
+
+.ImagemMulher img {
+    width: 100%;
+    height: 70rem;
+}
+
+.Checkout {
+    text-align: center;
+}
+
+.Checkout h2 {
+    margin-top: 9rem;
+    margin-bottom: 6rem;
+    font-size: 4.5rem;
+    font-weight: 300;
+}
+
+.ConjuntoCaixas {
+    display: flex;
+    justify-content: center;
+    gap: 7.5rem;
+}
+
+.PrimeiraCaixa img,
+.SegundaCaixa img,
+.TerceiraCaixa img {
+    width: 22rem;
+    height: 20rem;
+    cursor: pointer;
+}
+
+.ConjuntoCaixas h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.9rem;
+}
+
+.ConjuntoCaixas p {
+    width: 28rem;
+    font-family: "Comic Neue";
+    font-size: 1.2rem;
+    margin-bottom: 12rem;
+}
+
+.SegundaInformacaoImagem {
+    padding: 10rem;
+    margin-bottom: 1rem;
+}
+
+container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+}
+
+.CaixaInformacoes img {
+    margin-top: 9rem;
+    transition: transform .3s;
+    margin-bottom: 4.5rem;
+}
+
+.CaixaInformacoes img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.CaixaInformacoes h3 {
+    width: 54rem;
+    font-weight: 300;
+    font-size: 3.15rem;
+    margin-bottom: 4.5rem;
+}
+
+.CaixaInformacoes button {
+    border-radius: 20rem;
+    padding: 1.6rem 2.8rem 1.6rem 2.8rem;
+    border: 0rem solid;
+    font-family: "Comic Neue";
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.Infos {
+    margin-top: 2rem;
+    margin-bottom: 9.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 27rem;
+    padding-right: 27rem;
+}
+
+
+.Infos img {
+    transition: transform .3s;
+}
+
+.Infos img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.Infos h3 {
+    padding-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding-bottom: .8rem;
+}
+
+.Gain h3 {
+    margin: 0 auto;
+    width: 37rem;
+}
+
+.create img {
+    padding-top: 1.2rem;
+}
+
+.create h3 {
+    margin: 0 auto;
+    width: 20rem;
+}
+
+.Infos p {
+    margin: 0 auto;
+    width: 34rem;
+    font-family: "Comic Neue";
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+#teste {
+    width: 100%;
+    height: 30rem;
+}
+
+.Conteudo {
+    background-color: white;
+    position: absolute;
+    width: 118rem;
+    height: 20rem;
+    align-items: center;
+    border-radius: 1.6rem;
+    box-shadow: 0px 8px 8px -4px #10182808;
+    box-shadow: 0px 20px 24px -4px #10182814;
+    padding: 6.4rem;
+    display: flex;
+    gap: 6rem;
+    text-align: center;
+}
+
+.Conteudo h2 {
+    text-align: left;
+    width: 52rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.MiniForm {
+    text-align: left;
+}
+
+.MiniForm input {
+    width: 36rem;
+    border-radius: .8rem;
+    border: .1rem solid #D0D5DD;
+    padding: 1.2rem 1.4rem;
+    margin-right: 1.6rem;
+}
+
+.MiniForm button {
+    border-radius: 20rem;
+    padding: 1.6rem 2.8rem 1.6rem 2.8rem;
+    border: 0rem solid;
+    font-family: "Comic Neue";
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.test {
+    width: 100%;
+    height: 39rem;
+    background-image: linear-gradient(to bottom, #FDF8F2 50%, rgb(0, 0, 0) 0, rgb(0, 0, 0) 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.DataHorario {
+    background-color: black;
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+
+.Datas {
+    margin-top: 5rem;
+    text-align: left;
+}
+
+.Datas h2 {
+    font-size: 4.7rem;
+    font-weight: 600;
+    color: #A4C14D;
+}
+
+.Datas p {
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+    font-family: "Comic Neue";
+    color: white;
+}
+
+.Datas button {
+    margin-top: 2rem;
+    text-align: left;
+    border-radius: 20rem;
+    padding: .8rem 1.4rem .8rem 1.4rem;
+    border: .1rem solid white;
+    font-family: "Comic Neue";
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.Zoom {
+    text-align: left;
+}
+
+.Zoom h2 {
+    font-size: 4.7rem;
+    font-weight: 600;
+    color: white;
+}
+
+.Zoom p {
+    margin-top: 1.2rem;
+    font-size: 1.7rem;
+    font-family: "Comic Neue";
+    color: white;
+}
+
+.PaginaConvite {
+    width: 100%;
+    text-align: center;
+}
+
+.Invite h2 {
+    margin-top: 9.6rem;
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.Invite p {
+    margin: 2rem auto 0;
+    width: 60rem;
+    font-family: "Comic Neue";
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.ImagemConvite {
+    margin-top: 6rem;
+}
+
+.BotaoCompartilhar button {
+    margin-top: 6rem;
+    margin-bottom: 9.6rem;
+    border-radius: 20rem;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    border: 0rem solid;
+    font-family: "Comic Neue";
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+}
+
+.MenuFooter {
+    width: 120rem;
+    margin: 0 auto;
+    color: white;
+}
+
+.MenuFooter img{
+    margin-top: 6.4rem;
+}
+
+.MenuFooter ul {
+    margin-top: 2.5rem;
+    margin-bottom: 6rem;
+    font-size: 1.6rem;
+}
+
+.Rodape {
+    border-top: .1rem solid gray;
+    margin: 0 auto;
+    padding-bottom: 4.5rem;
+    width: 120rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Rodape p {
+    margin-top: 3rem;
+    font-family: "Comic Neue";
+    font-size: 1.6rem;
+    color: gray;
+}
+
+.RedesSociais {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.RedesSociais img:hover {
+    cursor: pointer;
+}
