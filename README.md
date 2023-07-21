@@ -2,6 +2,9 @@
 # Landing Page (Figma)
 
 Este projeto é uma implementação de um design criado no Figma usando HTML e CSS. A partir do design criado no Figma, o projeto é desenvolvido utilizando-se HTML para a estrutura do documento e CSS para a estilização e layout.
+
+Segue o link de acesso:
+https://landing-page-figma-sepia.vercel.app/
 ## Ferramentas Utilizadas
 
 - Figma
