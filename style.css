@@ -9,7 +9,6 @@
 }
 
 body {
-    overflow-x: hidden;
     font-family: "Fraunces";
     background-color: #FDF8F2;
 }
@@ -74,6 +73,12 @@ header button {
     padding: 1rem 1.8rem;
     font-size: 1.2rem;
     cursor: pointer;
+}
+
+.Bars {
+    position: absolute;
+    right: 0;
+    margin-right: 3rem;
 }
 
 .Bars img {
@@ -173,6 +178,7 @@ h4 {
 }
 
 .DuasCaixasTexto {
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 5.6rem;
@@ -225,6 +231,7 @@ h4 {
 }
 
 .CaixaAmarela {
+    width: 100%;
     background-color: #FED501;
     text-align: center;
     padding-top: 9rem;
@@ -283,7 +290,7 @@ h4 {
 
 #ReadAbout {
     margin-top: 0;
-    margin-bottom: 0;;
+    margin-bottom: 0;
 }
 
 .ImagemMulher {
@@ -342,6 +349,7 @@ h4 {
 }
 
 container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding-left: 3rem;
@@ -633,6 +641,11 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     header {
         padding: 2rem 3rem;
     }
@@ -857,19 +870,19 @@ footer {
     }
 
     .MiniForm input {
-        width: 10rem;
-        margin-right: 1rem;
+        width: 8rem;
+        margin-right: .3rem;
         font-size: .8rem;
         padding: .5rem .5rem;
     }
 
     .MiniForm button {
-        padding: 1rem 1rem;
+        padding: .5rem .5rem;
         font-size: .8rem;
     }
 
     .MiniForm h4 {
-        font-size: .8rem;
+        font-size: .7rem;
     }
 
     .DataHorario {
@@ -878,9 +891,6 @@ footer {
         justify-content: center;
     }
 
-    .Datas {
-        margin-top: 3.8rem;
-    }
 
     .Datas h2 {
         font-size: 1.5rem;
@@ -895,10 +905,6 @@ footer {
     .Datas button {
         padding: .8rem 1rem;
         font-size: 1rem;
-    }
-
-    .Zoom {
-        margin-top: -1.1rem;
     }
 
     .Zoom h2 {
