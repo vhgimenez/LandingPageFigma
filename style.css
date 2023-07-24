@@ -9,6 +9,7 @@
 }
 
 body {
+    overflow-x: hidden;
     font-family: "Fraunces";
     background-color: #FDF8F2;
 }
@@ -75,17 +76,29 @@ header button {
     cursor: pointer;
 }
 
+.Bars img {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.Bars img:hover {
+    cursor: pointer;
+}
+
 #Consult {
     background-color: black;
     color: white;
 }
 
 main {
-    width: 100vh;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .ConteudoPrincipal {
@@ -176,7 +189,7 @@ h4 {
 
 .PrimeiroBloco,
 .SegundoBloco {
-    width: 50rem;
+    width: 35%;
 }
 
 .PrimeiroBloco hr {
@@ -249,6 +262,7 @@ h4 {
 }
 
 .informacoes {
+    width: 50%;
     margin: auto auto;
     text-align: center;
 }
@@ -260,8 +274,7 @@ h4 {
 }
 
 .informacoes p {
-    margin-top: 1.5rem;
-    margin-bottom: 2.8rem;
+    margin: 1.5rem auto 2.8rem;
     width: 32rem;
     font-family: "Comic Neue";
     font-size: 1.5rem;
@@ -270,6 +283,7 @@ h4 {
 
 #ReadAbout {
     margin-top: 0;
+    margin-bottom: 0;;
 }
 
 .ImagemMulher {
@@ -282,6 +296,7 @@ h4 {
 }
 
 .Checkout {
+    width: 100%;
     text-align: center;
 }
 
@@ -293,6 +308,7 @@ h4 {
 }
 
 .ConjuntoCaixas {
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 7.5rem;
@@ -320,6 +336,7 @@ h4 {
 }
 
 .SegundaInformacaoImagem {
+    width: 100%;
     padding: 10rem;
     margin-bottom: 1rem;
 }
@@ -328,6 +345,10 @@ container {
     display: flex;
     justify-content: space-between;
     padding-left: 3rem;
+}
+
+.CaixaInformacoes {
+    width: 50%;
 }
 
 .CaixaInformacoes img {
@@ -358,15 +379,19 @@ container {
     cursor: pointer;
 }
 
+.ImagemReuniao {
+    width: 50%;
+}
+
 .Infos {
-    margin-top: 2rem;
+    width: 100%;
+    margin-top: 4rem;
     margin-bottom: 9.6rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
-    padding-left: 27rem;
-    padding-right: 27rem;
+    gap: 18rem;
 }
 
 
@@ -416,7 +441,7 @@ container {
 .Conteudo {
     background-color: white;
     position: absolute;
-    width: 118rem;
+    width: 80%;
     height: 20rem;
     align-items: center;
     border-radius: 1.6rem;
@@ -561,10 +586,11 @@ container {
 
 footer {
     background-color: black;
+    width: 100%;
 }
 
 .MenuFooter {
-    width: 120rem;
+    width: 80%;
     margin: 0 auto;
     color: white;
 }
@@ -583,7 +609,7 @@ footer {
     border-top: .1rem solid gray;
     margin: 0 auto;
     padding-bottom: 4.5rem;
-    width: 120rem;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -603,4 +629,330 @@ footer {
 
 .RedesSociais img:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 2rem 3rem;
+    }
+
+    header img {
+        width: 20rem;
+        height: 2rem;
+    }
+
+    nav ul {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+
+    .menu-botoes {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+
+    .Bars img {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        width: 3rem;
+        height: 3rem;
+        border-radius: .5rem;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        width: 36rem;
+        margin: 1.6rem auto 1.7rem;
+        font-size: 2rem;
+    }
+
+    h4 {
+        width: 38rem;
+        font-size: 1rem;
+    }
+
+    .ConteudoPrincipal .conteudo-botoes button {
+        width: 8rem;
+        font-size: .7rem;
+        padding: 1rem 1.8rem 1rem 1.8rem;
+    }
+
+    .ConteudoPrincipal button {
+        padding: .2rem .6rem .2rem .6rem;
+        font-size: .6rem;
+    }
+
+    .ConteudoMosaico img {
+        width: 40rem;
+        height: 15rem;
+    }
+
+    .SegundoBloco {
+        margin-top: 17rem;
+    }
+
+    .PrimeiroBloco h2,
+    .SegundoBloco h2 {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .PrimeiroBloco img,
+    .SegundoBloco img {
+        margin-top: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .CaixaAmarela {
+        padding: 9rem 1rem 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .CaixaAmarela h2 {
+        font-size: 2.7rem;
+    }
+
+    .CaixaAmarela p {
+        margin: 1.5rem auto 0;
+        width: 33rem;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+
+    .CaixaAmarela button,
+    #ReadAbout {
+        margin-top: 2.5rem;
+        padding: 1rem 1.8rem;
+        font-size: 1rem;
+    }
+
+    .informacoes h2 {
+        font-size: 2.5rem;
+    }
+
+    .informacoes p {
+        margin: 1.5rem auto 1.5rem;
+        font-size: 1rem;
+        width: 20rem;
+    }
+
+    .ImagemMulher img {
+        height: 30rem;
+    }
+
+    .Checkout h2 {
+        font-size: 2.5rem;
+    }
+
+    .ConjuntoCaixas {
+        padding: 0 1rem;
+        gap: 3rem;
+    }
+
+    .ConjuntoCaixas h2 {
+        font-size: 1.5rem;
+    }
+
+    .ConjuntoCaixas p {
+        width: 10rem;
+        font-size: .8rem;
+    }
+
+    .PrimeiraCaixa img,
+    .SegundaCaixa img,
+    .TerceiraCaixa img {
+        width: 10rem;
+        height: 6rem;
+        cursor: pointer;
+    }
+
+    .SegundaInformacaoImagem {
+        padding: 0;
+    }
+
+    container {
+        padding: 0 1rem;
+    }
+
+    .CaixaInformacoes img {
+        margin-top: 0;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .CaixaInformacoes h3 {
+        width: 15rem;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .ImagemReuniao  img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .CaixaInformacoes button {
+        padding: .6rem 1.8rem .6rem 1.8rem;
+        font-size: .8rem;
+    }
+
+    .Infos {
+        display: block;
+        gap: 1rem;
+        padding: 0 1rem;
+        margin: 6rem 0;
+    }
+
+    .Infos h3 {
+        font-size: 1.5rem;
+    }
+
+    .Gain img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .Gain h3 {
+        width: 19rem;
+    }
+
+    .create {
+        margin-top: 5rem;
+    }
+
+    .create img {
+        width: 2rem;
+        height: 3rem;
+    }
+
+    .create h3 {
+        width: 12rem;
+    }
+
+    .Infos p {
+        margin: 0 auto;
+        width: 20rem;
+        font-size: .8rem;
+        line-height: 1.5rem;
+    }
+
+    .Conteudo {
+        padding: 1rem;
+        gap: 1rem;
+        height: 12rem;
+    }
+
+    .Conteudo h2 {
+        width: 13em;
+        font-size: 1.2rem;
+    }
+
+    .MiniForm input {
+        width: 10rem;
+        margin-right: 1rem;
+        font-size: .8rem;
+        padding: .5rem .5rem;
+    }
+
+    .MiniForm button {
+        padding: 1rem 1rem;
+        font-size: .8rem;
+    }
+
+    .MiniForm h4 {
+        font-size: .8rem;
+    }
+
+    .DataHorario {
+        padding: 0 1rem;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .Datas {
+        margin-top: 3.8rem;
+    }
+
+    .Datas h2 {
+        font-size: 1.5rem;
+        color: #A4C14D;
+    }
+
+    .Datas p {
+        width: 18rem;
+        font-size: 1rem;
+    }
+
+    .Datas button {
+        padding: .8rem 1rem;
+        font-size: 1rem;
+    }
+
+    .Zoom {
+        margin-top: -1.1rem;
+    }
+
+    .Zoom h2 {
+        font-size: 1.5rem;
+    }
+
+    .Zoom p {
+        width: 13rem;
+        font-size: 1rem;
+    }
+
+    .Invite h2 {
+        font-size: 3rem;
+    }
+
+    .Invite p {
+        width: 37rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .ImagemConvite img {
+        width: 70%;
+    }
+
+    .BotaoCompartilhar button {
+        padding: 1rem 1rem;
+        font-size: 1rem;
+    }
+
+    .MenuFooter img{
+        width: 15rem;
+        height: 1.5rem;
+    }
+
+    .MenuFooter ul {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        gap: 1rem;
+        font-size: .8rem;
+    }
+
+    .Rodape p {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .RedesSociais {
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    .RedesSociais img {
+        width: 1rem;
+        height: 1rem;
+    }
 }
